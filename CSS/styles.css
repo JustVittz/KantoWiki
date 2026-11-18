@@ -34,7 +34,7 @@ header {
 /*---------------------------------------------------------------------------*/
 
 main {
-    background-image: url(/IMG/background-geral.png);
+    background-image: url(/IMG/background-roxo.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,10 +42,68 @@ main {
 }
 
 #main-title {
-    color: rgb(248, 225, 225);
+    color: black;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    padding: 180px 0px 0px 0px;
+    font-size: 50px;
+    padding: 180px 0px 30px 0px;
 
+}
+
+#main-text {
+    color: rgb(54, 54, 54);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 0px 70px 20px 70px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 850px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0px 0px 40px 0px;
+    gap: 25px;
+}
+
+.card-img {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+
+.card-img img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-desc {
+    flex: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#bulbasauro {
+    background-color: rgba(126, 252, 0, 0.774);
+}
+
+#charmander {
+    background-color: rgba(255, 166, 0, 0.774);
+}
+
+#squirtle {
+    background-color: rgba(0, 255, 255, 0.774);
 }
