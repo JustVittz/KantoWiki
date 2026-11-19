@@ -78,7 +78,7 @@ main {
     align-items: center;
     justify-content: center;
     border-right: 2px solid black;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 .card-img img {
@@ -106,4 +106,52 @@ main {
 
 #squirtle {
     background-color: rgba(0, 255, 255, 0.774);
+}
+
+/*---------------------------------------------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.info-card {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 550px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 0px 50px;
+    gap: 25px;
+}
+
+#bulbasauro-back {
+    background-image: url(/IMG/background-verde.jfif);
+}
+
+#space {
+    padding: 0px 0px 400px 0px;
+    color: rgba(255, 255, 255, 0);
+}
+
+#card-title, #card-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#card-title {
+    font-size: 40px;
+}
+
+.informacoes {
+    text-align: left;
+    font-size: 30px;
+    padding: 20px 0px 70px 0px;
+}
+
+#img-adjust {
+    padding: 0px 100px 0px 0px;
 }
