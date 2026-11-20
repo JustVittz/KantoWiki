@@ -1,6 +1,8 @@
+
 * {
     margin: 0px;
     border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -10,13 +12,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 7px solid white;
+    border-bottom: 7px solid rgb(0, 0, 0);
 }
-
 
 #header-title {
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-text-stroke: 4px black;
     text-align: center;
     font-size: 180px;
@@ -27,7 +27,6 @@ header {
     color: white;
     text-align: center;
     font-size: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px 0px 80px 0px;
 }
 
@@ -44,15 +43,12 @@ main {
 #main-title {
     color: black;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     padding: 180px 0px 30px 0px;
-
 }
 
 #main-text {
     color: rgb(54, 54, 54);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
     padding: 0px 70px 20px 70px;
 }
@@ -69,6 +65,8 @@ main {
     padding: 20px;
     margin: 0px 0px 40px 0px;
     gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: black;
 }
 
 .card-img {
@@ -97,50 +95,60 @@ main {
 }
 
 #bulbasauro {
-    background-color: rgba(126, 252, 0, 0.774);
+    background-image: url(/IMG/background-verde.jfif);
 }
 
 #charmander {
-    background-color: rgba(255, 166, 0, 0.774);
+    background-image: url(/IMG/background-laranja.png);
 }
 
 #squirtle {
-    background-color: rgba(0, 255, 255, 0.774);
+    background-image: url(/IMG/background-azul.png);
 }
 
 /*---------------------------------------------------------------------------*/
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 /*---------------------------------------------------------------------------*/
 
-.info-card {
+.card-info-geral {
     display: flex;
     align-items: center;
-    width: 1500px;
-    height: 550px;
+    width: 80%;
+    height: 600px;
     background-color: white;
     border: 3px solid black;
-    border-radius: 25px;
+    border-radius: 40px;
     padding: 0px 50px;
+    margin: 140px 0px;
     gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
+
+.card-status {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 40px;
+    padding: 0px 50px;
+    margin: 140px 0px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/*---------------------------------------------------------------------------*/
 
 #bulbasauro-back {
     background-image: url(/IMG/background-verde.jfif);
 }
 
-#space {
-    padding: 0px 0px 400px 0px;
-    color: rgba(255, 255, 255, 0);
-}
 
-#card-title, #card-text {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 #card-title {
     font-size: 40px;
@@ -149,9 +157,143 @@ a {
 .informacoes {
     text-align: left;
     font-size: 30px;
-    padding: 20px 0px 70px 0px;
+    padding: 20px 0px 60px 0px;
 }
 
-#img-adjust {
-    padding: 0px 100px 0px 0px;
+#info-img {
+    padding: 0px 40px 0px 0px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.evo {
+    display: flex;
+    flex-direction: column;
+}
+
+#evo-img {
+    block-size: 270px;
+}
+
+#evo-text {
+    font-size: 30px;
+    padding: 15px 0px 0px 0px;
+}
+
+#evo-level {
+    font-size: 25px;
+}
+
+#evo-arrow {
+    font-size: 40px;
+}
+
+#evo-title {
+    font-size: 40px;
+    padding: 0px 0px 10px 0px;
+}
+
+#bulba-type1 {
+    background-color: chartreuse;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px 0px 8px 0;
+}
+
+#bulba-type2 {
+    background-color: rgb(87, 160, 15);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.card-evo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 20px 50px;
+    margin: 140px 0px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.evos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.card-curiosidades {
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 0px 50px;
+    margin: 220px 0px 0px 0px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#curio-text {
+    font-size: 20px;
+    padding: 20px 0px 0px 20px;
+}
+
+#curio-title {
+    font-size: 40px;
+    padding: 50px 0px 10px 0px;
+}
+
+#curio-final {
+    font-size: 20px;
+    padding: 60px 0px 50px 20px;
+}
+
+#voltar {
+    background-color: white;
+    margin: 100px 0px;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#voltar:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+/*---------------------------------------------------------------------------*/
+
+#footer-text {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+}
+
+#nav-text {
+    color: white;
 }
