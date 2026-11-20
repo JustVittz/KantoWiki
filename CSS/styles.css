@@ -3,6 +3,7 @@
     margin: 0px;
     border: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -38,13 +39,14 @@ main {
     background-size: cover;
     background-position: center;
     border-bottom: 2px solid black;
+    padding: 130px 0px;
 }
 
 #main-title {
     color: black;
     text-align: center;
     font-size: 50px;
-    padding: 180px 0px 30px 0px;
+    padding: 80px 0px 30px 0px;
 }
 
 #main-text {
@@ -198,7 +200,7 @@ a {
     color: white;
     padding: 5px 5px;
     border-radius: 10px;
-    margin: 20px 0px 8px 0;
+    margin: 20px 0px 8px 0px;
 }
 
 #bulba-type2 {
@@ -261,7 +263,7 @@ a {
     padding: 60px 0px 50px 20px;
 }
 
-#voltar {
+#botao {
     background-color: white;
     margin: 100px 0px;
     padding: 20px 30px;
@@ -271,7 +273,7 @@ a {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-#voltar:hover {
+#botao:hover {
     transform: scale(1.07);
     transition: 0.3s;
 }
@@ -296,4 +298,81 @@ nav {
 
 #nav-text {
     color: white;
+}
+
+/*---------------------------------------------------------------------------*/
+
+#chari-type1 {
+    background-color: red;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px 0px 8px 0px;
+}
+
+#chari-type2 {
+    background-color: rgb(249, 189, 117);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    
+}
+
+#squir-type1 {
+    background-color: rgb(19, 255, 255);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px 0px 8px 0px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.card-home {
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 0px 50px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#home-title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    padding: 300px 0px 100px 0px;
+}
+
+.battle-card {
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 0px 50px;
+    margin: 300px 0px 20px 0px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    background-image: url(/IMG/background-fantasia.png);
+}
+
+#battle-card-title {
+    color: white;
+    font-size: 40px;
+    padding: 20px 0px 80px 0px;
+}
+
+#battle-card-text {
+    color: white;
+    font-size: 20px;
+    padding: 0px 0px 20px 0px;
+}
+
+.battle-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
