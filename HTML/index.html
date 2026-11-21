@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> PokeWiki - Home </title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 
 <body>
+
+    <div id="intro">
+        <h1 id="intro-logo"> KantoWiki </h1>
+        <p id="intro-sub"> A sua wiki do trio Kanto! </p>
+    </div>
+
+    <div id="pokebolas"></div>
+
+    <nav>
+
+        <a href="index.html" class="nav-text"> Home </a>
+        <a class="nav-text" href="#pokemons"> Iniciais </a>
+        <a class="nav-text" href="#batalha"> Batalha </a>
+        <a class="nav-text" href="#rodape"> Sugestões </a>
+
+    </nav>
 
     <header>
 
@@ -19,6 +36,10 @@
 
     <main>
 
+        <center>
+
+        <div class="card-home">
+
         <h1 id="main-title"> Bem vindo ao mundo Pokémon! </h1>
 
         <p id="main-text"> Criado originalmente no Japão, Pokémon é uma das franquias de entretenimento mais populares e influentes da história dos videogames. Seu universo é habitado por criaturas conhecidas como Pokémon, seres com características, habilidades e personalidades únicas, que convivem com os seres humanos em diferentes regiões do mundo. Desde seu surgimento, a franquia conquistou milhões de fãs ao redor do planeta, expandindo-se muito além dos videogames e alcançando outras mídias, como séries animadas, filmes, mangás, jogos de cartas colecionáveis e diversos produtos licenciados. </p>
@@ -26,18 +47,26 @@
         <br><br><br><br>
         <p id="main-text"> Ao longo dos anos, os jogos foram organizados em diferentes gerações, cada uma introduzindo novas regiões, personagens, mecânicas e espécies de Pokémon. Entre os mais conhecidos está Kanto, a cidade inicial dos primeiro jogos da franquia, os Pokémon Red e Blue. E é ai que a KantoWiki entra! Aqui, você poderá aprender mais sobre cada um desses pokémons iniciais, e assim ter o melhor progresso na sua campanha!  </p>
 
+        <br><br>
 
-        <h1 id="main-title"> Escolha o seu pokémon inicial! </h1>
-        <br><br><br>
+        </div>
+
+        </center>
+
+
+
+        <section id="pokemons">
+
+        <h1 id="home-title"> Escolha o seu pokémon inicial: </h1>
 
         <center>
 
-            <a href="/HTML/bulbasauro.html">
+            <a href="pokemon.html?p=bulbasauro">
 
                 <div class="card" id="bulbasauro">
 
                     <div class="card-img">
-                        <img src="/IMG/bulbasauro.png">
+                        <img src="../IMG/bulbasauro.png" alt="Bulbasauro">
                     </div>
 
                     <div class="card-desc">
@@ -51,10 +80,12 @@
             </a>
 
 
+            <a href="pokemon.html?p=charmander">
+
             <div class="card" id="charmander">
 
                 <div class="card-img">
-                    <img src="/IMG/charmander.jpg">
+                    <img src="../IMG/charmander.jpg" alt="Charmander">
                 </div>
 
                 <div class="card-desc">
@@ -65,11 +96,15 @@
 
             </div>
 
+            </a>
+
+            <a href="pokemon.html?p=squirtle">
+
 
             <div class="card" id="squirtle">
 
                 <div class="card-img">
-                    <img src="/IMG/squirtle.jpg">
+                    <img src="../IMG/squirtle.jpg" alt="Squirtle">
                 </div>
 
                 <div class="card-desc">
@@ -80,9 +115,31 @@
 
             </div>
 
+            </a>
+
+        </center>
+
+        </section>
+
+        <center>
+
+        <a class="battle-card" id="batalha" href="pokemon.html?p=bulbasauro">
+
+            <h1 id="battle-card-title"> Comece uma batalha! </h1>
+
+            <p id="battle-card-text"> Entre em uma batalha simulada com um pokemon de sua escolha e teste as suas habilidades! Escolha entre Squirtle, Bulbasauro e Charmander e sinta na pele a emoção de uma batalha de verdade! </p>
+
+        </a>
+
         </center>
 
     </main>
+
+    <footer id="rodape">
+
+        <p id="footer-text"> &copy; 2026 KantoWiki. Todos os direitos reservados aos seus respectivos proprietários. <br> Este site é um projeto feito por fãs, sem fins lucrativos e destinado exclusivamente a fins informativos e de entretenimento. KantoWiki não possui vínculo oficial com a Nintendo, The Pokémon Company ou Game Freak. </p>
+
+    </footer>
 
 </body>
 </html>

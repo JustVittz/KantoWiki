@@ -3,12 +3,13 @@
     margin: 0px;
     border: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 header {
-    background-image: url(/IMG/background-img.png);
+    background-image: url(../IMG/background-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,21 +31,18 @@ header {
     padding: 0px 0px 80px 0px;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 main {
-    background-image: url(/IMG/background-roxo.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-bottom: 2px solid black;
+    padding: 130px 0px;
 }
 
 #main-title {
     color: black;
     text-align: center;
     font-size: 50px;
-    padding: 180px 0px 30px 0px;
+    padding: 80px 0px 30px 0px;
 }
 
 #main-text {
@@ -53,7 +51,7 @@ main {
     padding: 0px 70px 20px 70px;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 .card {
     display: flex;
@@ -95,24 +93,24 @@ main {
 }
 
 #bulbasauro {
-    background-image: url(/IMG/background-verde.jfif);
+    background-image: url(../IMG/background-verde.jfif);
 }
 
 #charmander {
-    background-image: url(/IMG/background-laranja.png);
+    background-image: url(../IMG/background-laranja.png);
 }
 
 #squirtle {
-    background-image: url(/IMG/background-azul.png);
+    background-image: url(../IMG/background-azul.png);
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 a {
     text-decoration: none;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 .card-info-geral {
     display: flex;
@@ -142,10 +140,10 @@ a {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 #bulbasauro-back {
-    background-image: url(/IMG/background-verde.jfif);
+    background-image: url(../IMG/background-verde.jfif);
 }
 
 
@@ -164,7 +162,7 @@ a {
     padding: 0px 40px 0px 0px;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 .evo {
     display: flex;
@@ -198,7 +196,7 @@ a {
     color: white;
     padding: 5px 5px;
     border-radius: 10px;
-    margin: 20px 0px 8px 0;
+    margin: 20px 0px 8px 0px;
 }
 
 #bulba-type2 {
@@ -231,7 +229,6 @@ a {
     gap: 50px;
 }
 
-/*---------------------------------------------------------------------------*/
 
 .card-curiosidades {
     text-align: left;
@@ -261,7 +258,7 @@ a {
     padding: 60px 0px 50px 20px;
 }
 
-#voltar {
+#botao {
     background-color: white;
     margin: 100px 0px;
     padding: 20px 30px;
@@ -271,19 +268,19 @@ a {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-#voltar:hover {
+#botao:hover {
     transform: scale(1.07);
     transition: 0.3s;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 #footer-text {
     text-align: center;
     padding: 20px 40px;
 }
 
-/*---------------------------------------------------------------------------*/
+
 
 nav {
     background-color: black;
@@ -294,6 +291,296 @@ nav {
     padding: 10px;
 }
 
-#nav-text {
+.nav-text {
     color: white;
+}
+
+
+
+#chari-type1 {
+    background-color: red;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px 0px 8px 0px;
+}
+
+#chari-type2 {
+    background-color: rgb(249, 189, 117);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+
+}
+
+#squir-type1 {
+    background-color: rgb(19, 255, 255);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px 0px 8px 0px;
+}
+
+
+
+.card-home {
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 0px 50px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#home-title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    padding: 300px 0px 100px 0px;
+}
+
+.battle-card {
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 0px 50px;
+    margin: 300px 0px 20px 0px;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    background-image: url(../IMG/background-fantasia.png);
+}
+
+#battle-card-title {
+    color: white;
+    font-size: 40px;
+    padding: 20px 0px 80px 0px;
+}
+
+#battle-card-text {
+    color: white;
+    font-size: 20px;
+    padding: 0px 0px 20px 0px;
+}
+
+.battle-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+body {
+    background-color: #efe6f8;
+}
+
+#pokebolas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.pokebola {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border: 3px solid #9b72c4;
+    background: linear-gradient(#b48fdc 0 46%, #9b72c4 46% 54%, #f3eafc 54% 100%);
+    animation: cair linear infinite;
+}
+
+.pokebola::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #9b72c4;
+    background-color: #f3eafc;
+}
+
+@keyframes cair {
+    from { transform: translateY(-15vh) rotate(0deg); }
+    to   { transform: translateY(115vh) rotate(360deg); }
+}
+
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1a1a40, #000000);
+    animation: intro-sai 0.8s ease 3s forwards;
+}
+
+#intro-logo {
+    color: white;
+    font-size: 120px;
+    text-shadow: 0 0 25px rgba(180, 143, 220, 0.9);
+    opacity: 0;
+    animation: logo-entra 1.2s ease 0.3s forwards;
+}
+
+#intro-sub {
+    color: white;
+    font-size: 35px;
+    opacity: 0;
+    animation: logo-entra 1.2s ease 1s forwards;
+}
+
+@keyframes logo-entra {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes intro-sai {
+    to { opacity: 0; visibility: hidden; }
+}
+
+.sem-intro #intro {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #header-title {
+        font-size: clamp(52px, 16vw, 100px);
+        -webkit-text-stroke: 3px black;
+        padding: 70px 20px 0;
+    }
+
+    #header-sub {
+        font-size: 28px;
+        padding: 10px 20px 50px;
+    }
+
+    main {
+        padding: 70px 20px;
+    }
+
+    .card,
+    .card-info-geral,
+    .card-status,
+    .card-evo,
+    .card-curiosidades,
+    .card-home,
+    .battle-card {
+        width: calc(100% - 40px);
+    }
+
+    .card {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .card-info-geral,
+    .card-status {
+        height: auto;
+        min-height: 420px;
+        padding: 30px 20px;
+    }
+
+    .evos {
+        flex-wrap: wrap;
+    }
+
+    .card-evo {
+        height: auto;
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    #main-title,
+    #home-title {
+        font-size: 36px;
+    }
+
+    #main-text {
+        font-size: 18px;
+        padding: 0 20px 20px;
+    }
+
+    .card-home,
+    .battle-card,
+    .card-curiosidades {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        flex-direction: column;
+        width: calc(100% - 24px);
+        height: auto;
+        padding: 16px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 180px;
+        border-right: 0;
+        border-bottom: 2px solid black;
+        padding: 0 0 16px;
+    }
+
+    .card-desc {
+        text-align: center;
+    }
+
+    .card-info-geral,
+    .card-status {
+        flex-direction: column;
+        width: calc(100% - 24px);
+        margin: 60px 0;
+        text-align: center;
+    }
+
+    #info-img {
+        max-width: 240px;
+        max-height: 240px;
+        padding: 0 0 20px;
+    }
+
+    .informacoes {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .card-evo,
+    .card-curiosidades {
+        width: calc(100% - 24px);
+        margin: 60px 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .evos {
+        flex-direction: column;
+    }
+
+    #evo-img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    #battle-card-title {
+        padding: 20px 0 40px;
+    }
 }

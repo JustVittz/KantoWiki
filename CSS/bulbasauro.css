@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dff0d4;
+    background-image: url(../IMG/background-verde.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #1c1c1c;
+}
+
+
+#folhas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.folha {
+    position: absolute;
+    top: 0;
+    animation: folha-cair linear infinite;
+}
+
+.folha-i {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: folha-balancar ease-in-out infinite alternate;
+}
+
+@keyframes folha-cair {
+    from { transform: translateY(-80px); }
+    to   { transform: translateY(110vh); }
+}
+
+@keyframes folha-balancar {
+    from { transform: translateX(-30px) rotate(-35deg); }
+    to   { transform: translateX(30px) rotate(35deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .folha, .folha-i { animation: none; }
+}
+
+
+.pagina {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+.voltar-topo {
+    display: inline-block;
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 999px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 12px;
+}
+
+.voltar-topo:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #1c1c1c;
+    border-radius: 28px;
+    padding: 20px 22px 32px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 4px 0 18px;
+}
+
+.titulo span {
+    color: #8a8a8a;
+    font-weight: 400;
+}
+
+
+
+.topo {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 18px;
+}
+
+.foto {
+    width: 200px;
+    height: 230px;
+    background-color: #d7efc2;
+    border: 2px solid #1c1c1c;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.descricao-curta {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.info-painel {
+    background-color: #2e7d32;
+    color: #fff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 16px;
+}
+
+.info-painel span {
+    display: block;
+    font-size: 11px;
+    opacity: 0.9;
+    margin-bottom: 2px;
+}
+
+.info-painel strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rotulo {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 14px 0 6px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chips.centro {
+    justify-content: center;
+}
+
+.chip {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+.planta    { background-color: #3f9f45; }
+.veneno    { background-color: #9c3fb0; }
+.fogo      { background-color: #f4511e; }
+.voador    { background-color: #6f86d6; }
+.gelo      { background-color: #2a9fc4; }
+.psiquico  { background-color: #e5487f; }
+
+
+
+.secao {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 24px 0 10px;
+}
+
+.stats {
+    background-color: #ececec;
+    border-radius: 14px;
+    padding: 14px 16px;
+}
+
+.stat {
+    display: grid;
+    grid-template-columns: 80px 1fr 30px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.stat-valor {
+    text-align: right;
+}
+
+.barra {
+    height: 7px;
+    background-color: #cfcfcf;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.barra div {
+    height: 100%;
+    width: calc(var(--v) / 130 * 100%);
+    background: linear-gradient(90deg, #8bd16b, #3f9f45);
+    border-radius: 999px;
+    animation: encher 1s ease-out both;
+}
+
+@keyframes encher {
+    from { width: 0; }
+}
+
+.total {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    margin-top: 6px;
+}
+
+
+
+.evolucoes {
+    background-color: #444;
+    border-radius: 16px;
+    padding: 22px 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.evo-item {
+    text-align: center;
+    color: #fff;
+    width: 120px;
+}
+
+.evo-img {
+    width: 72px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.evo-img img {
+    width: 82%;
+    height: 82%;
+    object-fit: contain;
+}
+
+.evo-nome {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.evo-num {
+    font-size: 10px;
+    color: #ccc;
+    margin: 2px 0 6px;
+}
+
+.evolucoes .chip {
+    font-size: 11px;
+    padding: 3px 10px;
+}
+
+.evo-seta {
+    color: #fff;
+    text-align: center;
+}
+
+.evo-seta span {
+    display: block;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.evo-seta small {
+    font-size: 10px;
+}
+
+
+
+.texto {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.lista {
+    padding-left: 22px;
+}
+
+.lista li {
+    margin-bottom: 6px;
+}
+
+.centro-botao {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 22px;
+    border: 2px solid #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.botao-voltar:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+.rodape {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+
+
+@media (max-width: 640px) {
+    .topo { grid-template-columns: 1fr; }
+    .foto { width: 100%; }
+    .evolucoes { flex-wrap: wrap; }
+    .titulo { font-size: 30px; }
+}
