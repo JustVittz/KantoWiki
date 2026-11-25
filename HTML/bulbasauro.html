@@ -5,185 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> PokeWiki - Bulbasauro </title>
-    <link rel="stylesheet" href="../CSS/bulbasauro.css">
-    <script src="../JS/bulbasauro.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 
-<body>
+<body class="tema-planta" data-pokemon="bulbasauro">
 
-    <div id="folhas"></div>
+    <div id="efeitos"></div>
 
     <div class="pagina">
 
-        <a class="voltar-topo" href="index.html#pokemons"> &larr; Voltar para os iniciais </a>
+        <div class="barra-topo">
 
-        <article class="card">
+            <a class="pilula zoom" href="home.html#pokemons"> &larr; Voltar para os iniciais </a>
 
-            <h1 class="titulo"> Bulbasauro <span> N° 0001 </span> </h1>
+            <nav class="troca">
+                <a class="pilula zoom ativo" href="bulbasauro.html"> Bulbasauro </a>
+                <a class="pilula zoom" href="charmander.html"> Charmander </a>
+                <a class="pilula zoom" href="squirtle.html"> Squirtle </a>
+            </nav>
 
-            <section class="topo">
+        </div>
 
-                <div class="foto">
-                    <img src="../IMG/bulbasauro.png" alt="Bulbasauro">
-                </div>
+        <article class="card" id="card"></article>
 
-                <div class="resumo">
-
-                    <p class="descricao-curta"> Bulbasaur é um dos Pokémon iniciais da região de Kanto e ocupa a primeira posição na Pokédex Nacional. Conhecido como Pokémon Semente, possui uma pequena planta em suas costas, que cresce e se desenvolve junto com seu corpo desde o nascimento. </p>
-
-                    <div class="info-painel">
-                        <div> <span> Altura </span> <strong> 0,7 m </strong> </div>
-                        <div> <span> Categoria </span> <strong> Semente </strong> </div>
-                        <div> <span> Peso </span> <strong> 6,9 kg </strong> </div>
-                        <div> <span> Habilidade </span> <strong> Overgrow </strong> </div>
-                        <div> <span> Sexo </span> <strong> ♂ ♀ </strong> </div>
-                        <div> <span> Habilidade oculta </span> <strong> Chlorophyll </strong> </div>
-                    </div>
-
-                    <h2 class="rotulo"> Tipo </h2>
-                    <div class="chips">
-                        <span class="chip planta"> Planta </span>
-                        <span class="chip veneno"> Veneno </span>
-                    </div>
-
-                    <h2 class="rotulo"> Fraquezas </h2>
-                    <div class="chips">
-                        <span class="chip fogo"> Fogo </span>
-                        <span class="chip voador"> Voador </span>
-                        <span class="chip gelo"> Gelo </span>
-                        <span class="chip psiquico"> Psíquico </span>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <h2 class="secao"> Estatísticas base </h2>
-
-            <div class="stats">
-
-                <div class="stat">
-                    <span class="stat-nome"> PS </span>
-                    <div class="barra"> <div style="--v: 45"></div> </div>
-                    <span class="stat-valor"> 45 </span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-nome"> Ataque </span>
-                    <div class="barra"> <div style="--v: 49"></div> </div>
-                    <span class="stat-valor"> 49 </span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-nome"> Defesa </span>
-                    <div class="barra"> <div style="--v: 49"></div> </div>
-                    <span class="stat-valor"> 49 </span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-nome"> Atq. Esp. </span>
-                    <div class="barra"> <div style="--v: 65"></div> </div>
-                    <span class="stat-valor"> 65 </span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-nome"> Def. Esp. </span>
-                    <div class="barra"> <div style="--v: 65"></div> </div>
-                    <span class="stat-valor"> 65 </span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-nome"> Velocidade </span>
-                    <div class="barra"> <div style="--v: 45"></div> </div>
-                    <span class="stat-valor"> 45 </span>
-                </div>
-
-                <p class="total"> <strong> Total: 318 </strong> </p>
-
-            </div>
-
-            <h2 class="secao"> Evoluções </h2>
-
-            <div class="evolucoes">
-
-                <div class="evo-item">
-                    <div class="evo-img"> <img src="../IMG/bulbasauro.png" alt="Bulbasauro"> </div>
-                    <p class="evo-nome"> Bulbasauro </p>
-                    <p class="evo-num"> N° 0001 </p>
-                    <div class="chips centro">
-                        <span class="chip planta"> Planta </span>
-                        <span class="chip veneno"> Veneno </span>
-                    </div>
-                </div>
-
-                <div class="evo-seta">
-                    <span> &rsaquo; </span>
-                    <small> Nv. 16 </small>
-                </div>
-
-                <div class="evo-item">
-                    <div class="evo-img"> <img src="../IMG/ivysaur.png" alt="Ivysaur"> </div>
-                    <p class="evo-nome"> Ivysaur </p>
-                    <p class="evo-num"> N° 0002 </p>
-                    <div class="chips centro">
-                        <span class="chip planta"> Planta </span>
-                        <span class="chip veneno"> Veneno </span>
-                    </div>
-                </div>
-
-                <div class="evo-seta">
-                    <span> &rsaquo; </span>
-                    <small> Nv. 32 </small>
-                </div>
-
-                <div class="evo-item">
-                    <div class="evo-img"> <img src="../IMG/venusaur.png" alt="Venusaur"> </div>
-                    <p class="evo-nome"> Venusaur </p>
-                    <p class="evo-num"> N° 0003 </p>
-                    <div class="chips centro">
-                        <span class="chip planta"> Planta </span>
-                        <span class="chip veneno"> Veneno </span>
-                    </div>
-                </div>
-
-            </div>
-
-            <h2 class="secao"> Descrição </h2>
-
-            <p class="texto"> Essa planta armazena nutrientes e absorve energia solar, permitindo que Bulbasaur utilize diferentes habilidades relacionadas à natureza. Apesar de sua aparência tranquila, ele é capaz de utilizar poderosos ataques dos tipos Planta e Veneno para enfrentar seus adversários. Ao longo de seu desenvolvimento, a semente em suas costas começa a florescer, dando origem a uma planta cada vez maior. Esse processo acompanha suas evoluções para Ivysaur e, posteriormente, Venusaur. </p>
-
-            <p class="texto"> Nos jogos Pokémon Red e Blue, Bulbasaur é uma das três opções de Pokémon inicial oferecidas pelo Professor Oak, sendo uma excelente escolha para treinadores que desejam começar sua jornada com um Pokémon equilibrado e com vantagens contra alguns dos primeiros desafios da região de Kanto. </p>
-
-            <h2 class="secao"> Curiosidades </h2>
-
-            <ul class="texto lista">
-                <li> Apesar de seu nome lembrar dinossauros, Bulbasaur tem como inspiração principal um sapo, especialmente pelas pernas curtas e pelo corpo robusto. </li>
-                <li> Em 2001, o país de Niue lançou uma moeda comemorativa de prata de 1 dólar neozelandês com uma representação do Bulbasaur em uma de suas faces. </li>
-                <li> A designer Atsuko Nishida desenvolveu Venusaur primeiro e trabalhou de trás para frente até chegar ao Bulbasaur. Ou seja, o primeiro da Pokédex foi o último de sua linha evolutiva a ser desenhado! </li>
-            </ul>
-
-            <h2 class="secao"> Principais ataques </h2>
-
-            <ul class="texto lista">
-                <li> Chicote de Cipó (Vine Whip) </li>
-                <li> Folha Navalha (Razor Leaf) </li>
-                <li> Pó do Sono (Sleep Powder) </li>
-                <li> Raio Solar (Solar Beam) </li>
-            </ul>
-
-            <p class="texto"> Bulbasaur é uma ótima opção para treinadores iniciantes que gostam de estratégias envolvendo efeitos de status e ataques de Planta. Se você é um jogador que prefere uma jogada pensada e um controle da situação, Bulbasauro é a melhor opção inicial! </p>
-
-            <div class="centro-botao">
-                <a class="botao-voltar" href="index.html#pokemons"> Escolher outra opção </a>
-            </div>
-
-        </article>
-
-        <footer class="rodape">
+        <footer class="rodape caixa">
             <p> &copy; 2026 KantoWiki. Todos os direitos reservados aos seus respectivos proprietários. <br> Este site é um projeto feito por fãs, sem fins lucrativos e destinado exclusivamente a fins informativos e de entretenimento. KantoWiki não possui vínculo oficial com a Nintendo, The Pokémon Company ou Game Freak. </p>
         </footer>
 
     </div>
 
 </body>
+
 </html>
